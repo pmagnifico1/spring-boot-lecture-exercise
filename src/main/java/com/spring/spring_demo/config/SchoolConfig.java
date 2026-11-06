@@ -1,0 +1,17 @@
+package com.spring.spring_demo.config;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Bean;
+
+import com.spring.spring_demo.Student;
+import com.spring.spring_demo.ElementaryStudent;
+
+@Configuration 
+public class SchoolConfig {
+
+  @Bean("elementaryStudent") 
+  public Student elementaryStudent() {
+    return new ElementaryStudent();
+  }
+
+}
